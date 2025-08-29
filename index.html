@@ -126,31 +126,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="#home" class="nav-link"><span>Home</span></a>
+              <a href="#home" class="nav-link"><span data-hover="Home">Home</span></a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link"><span>About</span></a>
+              <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link"><span>Skills</span></a>
+              <a href="#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
             </li>
             <li class="nav-item">
-              <a href="#education" class="nav-link"><span>Education</span></a>
+              <a href="#education" class="nav-link"><span data-hover="Education">Education</span></a>
             </li>
             <!-- <li class="nav-item">
-              <a href="#projects" class="nav-link"><span>Projects</span></a>
+              <a href="#projects" class="nav-link"><span data-hover="Projects">Projects</span></a>
             </li> -->
             <li class="nav-item">
-              <a href="project.html" class="nav-link"><span>Projects</span></a>
+              <a href="project.html" class="nav-link"><span data-hover="Projects">Projects</span></a>
             </li>
             <li class="nav-item">
-              <a href="#experiences" class="nav-link"><span>Experiences</span></a>
+              <a href="#experiences" class="nav-link"><span data-hover="Experiences">Experiences</span></a>
             </li>
             <li class="nav-item">
-              <a href="#achievements" class="nav-link"><span>Achievements</span></a>
+              <a href="#achievements" class="nav-link"><span data-hover="Achievements">Achievements</span></a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link"><span>Contact</span></a>
+              <a href="contact.html" class="nav-link"><span data-hover="Contact">Contact</span></a>
             </li>
           </ul>
         </div>
@@ -250,27 +250,12 @@
             z-index: 10001;
             cursor: pointer;
           }
-          /* Underline on hover for navbar links */
-          .navbar-nav .nav-link {
-            position: relative;
-            transition: color 0.2s;
+
+          @media (min-width: 576px) {
+            .navbar-toggler-close {
+              display: none !important;
+            }
           }
-          .navbar-nav .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #ffc200;
-            transition: width 0.25s;
-            position: absolute;
-            left: 0;
-            bottom: 0.1em;
-          }
-          .navbar-nav .nav-link:hover::after,
-          .navbar-nav .nav-link:focus::after {
-            width: 100%;
-          }
-          
         </style>
 
       </div>
